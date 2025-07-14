@@ -1,0 +1,9 @@
+services:
+  - type: web
+    name: cockpit-cms
+    env: docker
+    plan: free
+    dockerfilePath: Dockerfile
+    envVars:
+      - key: PORT
+        value: 10000
