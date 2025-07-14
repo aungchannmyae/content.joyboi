@@ -1,3 +1,8 @@
+# Suppress deprecated and warning messages
+php_flag display_errors Off
+php_value error_reporting 22527
+
+
 # Deny access to database + config files
 <Files ~ "\.(sqlite|sdb|s3db|db|yaml|yml)$">
     <IfVersion >= 2.4>
