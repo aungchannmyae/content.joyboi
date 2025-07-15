@@ -15,4 +15,4 @@ COPY . /app
 WORKDIR /app
 
 # Start Cockpit CMS using PHP built-in server
-CMD ["php", "-S", "0.0.0.0:10000", "-t", "."]
+CMD ["php", "-S", "0.0.0.0:10000", "-t", ".", "index.php"]
